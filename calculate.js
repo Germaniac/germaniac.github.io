@@ -1,5 +1,3 @@
-document.getElementById('calculate').addEventListener('click', updater);
-
 function updater () {
     var selfLP = document.getElementById('selfLP').value;
     var oppLP = document.getElementById('oppLP').value;
