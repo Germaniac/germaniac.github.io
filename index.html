@@ -11,7 +11,7 @@
 <form>
 <label>Enter Neuron URL:</label>
 <br>
-<input type='string' style='width: 90%' id='url'>
+<input type='text' style='width: 90%' id='url'>
 <br>
 <label>Use English card names from Yugipedia (for plaintext):</label>
 <br>
@@ -21,7 +21,7 @@
 <button type='button' onclick='updater(false)'>Generate plaintext</button>
 <button type='button' onclick='updater(true)'>Generate ydke://</button>
 <br>
-<div style='word-break: break-word;' id='result'></div>
+<textarea style='white-space: pre-wrap; width: 100%; height: 500px;' class='scrollabletextbox' id='result' readonly></textarea>
 
 </body>
 </html>
