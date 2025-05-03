@@ -4,7 +4,7 @@ function updater (ydke) {
 		english_names: document.getElementById('english_names').checked,
 		ydke: ydke
 	};
-	document.getElementById('result').innerText = 'Loading.';
+	document.getElementById('result').value = 'Loading.';
 	result=fetch("https://three-abrupt-chips.glitch.me/convert", {
 		method: "POST",
 		headers: {
@@ -14,6 +14,6 @@ function updater (ydke) {
 	})
 	.then(response => response.json())
 	.then(data => {
-		document.getElementById('result').innerText = data.result || JSON.stringify(data);
+		document.getElementById('result').value = data.result || JSON.stringify(data);
 	})
 }
