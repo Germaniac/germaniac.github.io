@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rush Neuron to Text or YDKE</title>
+</head>
+<body>
+
+<script src='calculate.js'></script>
+<h1>Rush Neuron to Text or YDKE</h1>
+
+<form>
+<label>Enter Neuron URL:</label>
+<br>
+<input type='string' style='width: 90%' id='url'>
+<br>
+<label>Use English card names from Yugipedia (for plaintext):</label>
+<br>
+<input type='checkbox' id='english_names' checked>
+<br>
+</form>
+<button type='button' onclick='updater(false)'>Generate plaintext</button>
+<button type='button' onclick='updater(true)'>Generate ydke://</button>
+<br>
+<div style='word-break: break-word;' id='result'></div>
+
+</body>
+</html>
