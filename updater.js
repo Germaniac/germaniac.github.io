@@ -5,7 +5,7 @@ function updater (ydke) {
 		ydke: ydke
 	};
 	document.getElementById('result').value = 'Loading.';
-	result=fetch("https://082f957c-b392-4f8f-aa7f-4489a09215bd-00-oivlr7zrcib4.sisko.replit.dev/convert", {
+	result=fetch("https://germaniac.pythonanywhere.com/convert", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
