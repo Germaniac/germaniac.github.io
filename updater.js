@@ -5,7 +5,7 @@ function updater (ydke) {
 		ydke: ydke
 	};
 	document.getElementById('result').value = 'Loading.';
-	result=fetch("https://germaniac.pythonanywhere.com/convert", {
+	result=fetch("https://major-regine-germaniac-0fb5d6b4.koyeb.app/convert", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
