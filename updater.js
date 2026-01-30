@@ -12,8 +12,14 @@ function updater (ydke) {
 		},
   		body: JSON.stringify(payload)
 	})
-	.then(response => response.json())
+	.then(response => {
+        if (!response.ok) throw new Error();
+        return response.json();
+    })
 	.then(data => {
 		document.getElementById('result').value = data.result || JSON.stringify(data);
 	})
+	.catch(() => {
+        res.value = 'Error.'; // Handles network or server errors
+    });
 }
