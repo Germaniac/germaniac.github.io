@@ -1,6 +1,6 @@
 function updater (ydke) {
 	const payload = {
-		url: document.getElementById('url').value,
+		url: document.getElementById('url').value || document.getElementById('url').placeholder,
 		english_names: document.getElementById('english_names').checked,
 		ydke: ydke
 	};
