@@ -20,6 +20,6 @@ function updater (ydke) {
 		document.getElementById('result').value = data.result || JSON.stringify(data);
 	})
 	.catch(() => {
-        res.value = 'Error.'; // Handles network or server errors
+        document.getElementById('result').value = 'Error.'; // Handles network or server errors
     });
 }
