@@ -4,7 +4,7 @@ function updater (ydke) {
 		english_names: document.getElementById('english_names').checked,
 		ydke: ydke
 	};
-	document.getElementById('result').value = 'Loading.';
+	document.getElementById('result').value = 'Loading...';
 	result=fetch("https://major-regine-germaniac-0fb5d6b4.koyeb.app/convert", {
 		method: "POST",
 		headers: {
